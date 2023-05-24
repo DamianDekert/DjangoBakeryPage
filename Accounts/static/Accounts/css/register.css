@@ -1,0 +1,71 @@
+input[type=username]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=text]:focus {
+  border-color: pink;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px pink;
+  outline: 0 none;
+}
+
+#register-section {
+  margin-top: 40px;
+  height: 100vh;
+}
+#register-section .register-img {
+  height: 80vh;
+  margin-top: 20px;
+  background-image: url("../img/registerBgi.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+#register-section .register-main-text {
+  font-weight: bold;
+}
+#register-section .form-group label {
+  margin: 15px auto;
+  font-size: 18px;
+}
+#register-section .register-btn {
+  margin-top: 40px;
+  padding: 10px 30px;
+  border: 2px solid pink;
+  border-radius: 8px;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+#register-section .register-btn:hover {
+  background-color: pink;
+  color: white;
+}
+
+#success_message_section {
+  height: 49vh;
+  margin: 200px auto;
+}
+#success_message_section a {
+  text-decoration: none;
+}
+#success_message_section i {
+  color: pink;
+}
+
+.navbar {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  #register-section .register-img {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  #register-section .register-img {
+    scale: 1.1;
+    margin-top: 100px;
+  }
+}/*# sourceMappingURL=register.css.map */

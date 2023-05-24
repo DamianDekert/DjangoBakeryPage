@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'Accounts/css/register.css' %}">
+{% endblock style %}
+
+{% block content %}
+<div id='success_message_section' class="text-center">
+    <h2>Rejestracja zakończona pomyślnie <i class="fa-regular fa-circle-check"></i></h2>
+    <h4><a href="{% url 'login' %}">Zaloguj się</a> na swoje konto</h4>
+</div>
+{% endblock content %}

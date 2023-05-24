@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block style %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static './CoreApp/css/mainSection.css' %}">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+{% endblock style %}
+{% block content %}
+<article>
+    <article>
+        <section id="main-page" class="main-hero pt-5">
+            <div class="main-hero-shadow"></div>
+            <div class="container main-section">
+                <div class="d-flex justify-content-center ">
+                    <div class="">
+                        <h1 data-aos="fade-up" data-aos-delay="150" class="welcome-text">Witajcie w świecie tortów i słodkości!</h1>
+                        <i class="bounce-top next-arrow fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <article>
+        <section id="about-me" class="about-section pt-5">
+            <div class="container">
+                <div id="section-title">O mnie</div>
+                <div id="underline"></div>
+                <div data-aos="zoom-in" class="row d-flex justify-content-around">
+                    <img class="col-12 col-lg-6 order-lg-2 confectioner-photo" src="{% static 'CoreApp/img/Confectioner.jpg' %}" alt="Confectioner photo">
+                    <div data-aos="zoom-in" class="col-12 col-lg-6 order-lg-1 text-section">
+                        <p class="main-text-p"> 
+                            Mam na imię Natalia i serdecznie witam Państwa na stronie poświęconej mojej największej pasji jaką jest tworzenie tortów i słodkości. 
+                            Staram się, aby moje wypieki nie tylko zachwycały smakiem, ale także pięknie się prezentowały i stanowiły doskonałą dekorację każdej uroczystości.
+                            <p class="main-text-p hide-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur temporibus nesciunt illum. Quidem, sed fuga! Necessitatibus veritatis, possimus, mollitia facere cum quam ipsam, natus molestias nobis accusamus rem adipisci saepe. </p> 
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <article>
+        <section id="products" class="pt-5">
+            <div class="products-section">
+                <div class="container-fluid">                
+                    <div id="section-title">Produkty</div>
+                    <div id="underline"></div>
+                    <div class="row d-flex justify-content-around products-carousel">
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="hero-box wedding-cake">
+                                <div class="hero-box-shadow"></div>
+                                <h2 class="box-text">Torty weselne</h2>
+                                <button class="box-btn">Szczegóły</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="hero-box desserts">
+                                <div class="hero-box-shadow"></div>
+                                <h2 class="box-text">Desery</h2>
+                                <button class="box-btn">Szczegóły</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="hero-box birthday-cakes">
+                                <div class="hero-box-shadow"></div>
+                                <h2 class="box-text">Torty urodzinowe</h2>
+                                <button class="box-btn">Szczegóły</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="hero-box cakes">
+                                <div class="hero-box-shadow"></div>
+                                <h2 class="box-text">Ciasta</h2>
+                                <button class="box-btn">Szczegóły</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="hero-box childrens-cake">
+                                <div class="hero-box-shadow"></div>
+                                <h2 class="box-text">Torty dla dzieci</h2>
+                                <button class="box-btn">Szczegóły</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="hero-box sweet-table">
+                                <div class="hero-box-shadow"></div>
+                                <h2 class="box-text">Słodkie stoły</h2>
+                                <button class="box-btn">Szczegóły</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="hero-box communion-cake">
+                                <div class="hero-box-shadow"></div>
+                                <h2 class="box-text">Torty komunijne</h2>
+                                <button class="box-btn">Szczegóły</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="hero-box artistic-cake">
+                                <div class="hero-box-shadow"></div>
+                                <h2 class="box-text">Torty artystyczne</h2>
+                                <button class="box-btn">Szczegóły</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="hero-box christmas-cake">
+                                <div class="hero-box-shadow"></div>
+                                <h2 class="box-text">Ciasta świąteczne</h2>
+                                <button class="box-btn">Szczegóły</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="hero-box blueberry-bun">
+                                <div class="hero-box-shadow"></div>
+                                <h2 class="box-text">Drożdżówki</h2>
+                                <button class="box-btn">Szczegóły</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <article>
+        <section id="contact" class="pt-5">
+            <div class="contact-section">
+                <div class="container">             
+                    <div id="section-title">Zapraszam do kontaktu</div>
+                    <div id="underline"></div>
+                    <div class="row d-flex justify-content-center">
+                        <div data-aos="fade-right" class="col-12 col-md-12 col-lg-6 contact-text text-center mt-5">
+                            <p><a href="mailto:SłodkieCiastki@gmail.com" class="contact-email"><i class="fa-regular fa-envelope p-3"></i>SłodkieCiastki@gmail.com</a></p>
+                            <p><i class="fa-solid fa-phone p-3"></i>+50 852 60 90</p>
+                            <p><i class="fa-solid fa-mobile-screen-button p-3"></i>+48 503 146 290</p>
+                            <a href="https://www.facebook.com/natkaliad" class="contact-fpg p-3 fb" href="#"><i class="fa-brands fa-facebook i-contact"></i></a>
+                            <a href="https://www.instagram.com/slodkie_ciastki/" class="contact-fpg p-3 fb" href="#"><i class="fa-brands fa-facebook-messenger i-contact"></i></a>
+                            <a href="https://www.instagram.com/slodkie_ciastki/" class="contact-fpg p-3 ig" href="#"><i class="fa-brands fa-instagram i-contact"></i></a>
+                        </div>
+                        <div data-aos="fade-left" class="col-12 col-md-12 col-lg-6 contact-text">
+                            {% if form_submitted %}
+                                <div class="submitted-msg">
+                                    <h4 class="send-header">Dziękujemy za kontakt!</h4>
+                                    <p class="send-message"> {{ success_message }} </p>
+                                </div>
+                            {% else %}
+                                <form method="POST" action="/">
+                                    {% csrf_token %}
+                                    {{ form|crispy }}
+                                    <button class="slide">
+                                        <div class="span1">Wyślij</div>
+                                        <div class="span2">🍰🎂🧁</div>
+                                    </button>
+                                </form>
+                            {% endif %}   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</article>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src={% static './CoreApp/js/slick_settings.js' %}></script> 
+
+{% endblock content %}

@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+nav {
+  background-color: white;
+  overflow: hidden;
+  position: sticky;
+}
+nav .logo-style .logo-img {
+  scale: 1.7;
+  margin-left: 30px;
+}
+nav .nav-link {
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 18px;
+}
+nav .nav-link i {
+  font-size: 25px;
+  transition: transform 0.3s;
+}
+nav .nav-link i.fa-facebook:hover {
+  color: #1b74e4;
+  transform: scale(1.2);
+}
+nav .nav-link i.fa-instagram:hover {
+  transform: scale(1.3);
+  color: #fd5949;
+}
+nav .navbar-collapse.show {
+  background-color: white;
+}
+nav .fa-bars {
+  font-size: 30px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: rgb(233, 160, 172);
+}/*# sourceMappingURL=base.css.map */

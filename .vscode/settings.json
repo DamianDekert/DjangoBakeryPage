@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ac065953-3847-4a1b-9140-33d069cd41f1/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/Slodkie-Ciastki",
+    "appService.deploySubpath": "."
+}

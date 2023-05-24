@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'Accounts/css/login.css' %}">
+{% endblock style %}
+
+{% block content %}
+    <section id="login-section" class="">
+        <div class="container-fluid p-0">
+            <div class="d-flex justify-content-center login-area">
+                    <div class="shadow"></div>
+                    <form method="POST" action="login" class="row justify-content-center">
+                        {% csrf_token %}
+                        <h1 class="text-center main-login-text">Zaloguj się</h1>
+                        <div class="login-form col-10">
+                            {% if error_message %}
+                                <div id='invalid-input-login'>{{ error_message }}</div> 
+                            {% endif %}
+                            <input type="username" name="username" id="form-username" class="form-control form-control-lg login-input" 
+                            placeholder="Login" />
+                            <input type="password" name="password" id="form-password" class="form-control form-control-lg mt-5 login-input" 
+                            placeholder="Hasło" />
+                            <div>
+                                <p class="text-end register-link">Nie masz jesze swojego konta? <a href="{% url 'register' %}"> Zarejestruj się</a></p>
+                                <input class="form-check-input ms-2" type="checkbox" value="" name='remember_me' id="remember-me-checkbox"/>
+                                <label class="form-check-label ms-2 remember-me-label" for="remember-me-checkbox">
+                                    Zapamiętaj mnie
+                                </label>
+                            </div>
+                            <button class="ms-auto mt-3 ms-1 login-btn">Zaloguj</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
